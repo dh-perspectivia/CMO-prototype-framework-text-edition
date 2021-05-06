@@ -1,0 +1,26 @@
+@import "file:/C:/Program%20Files/Oxygen%20XML%20Editor%2023/frameworks/tei/xml/tei/css/tei_oxygen.css";
+
+@namespace oxy url('http://www.oxygenxml.com/extensions/author');
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+
+
+
+
+/*
+    Foldable elements
+*/
+div,
+titleStmt,
+editionStmt,
+publicationStmt,
+notesStmt,
+sourceDesc,
+listWit,
+witness,
+encodingDesc,
+projectDesc,
+teiHeader {
+    -oxy-foldable:true;
+    -oxy-not-foldable-child: head;
+}
